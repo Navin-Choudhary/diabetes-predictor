@@ -26,7 +26,7 @@ app.post('/predict', async (req, res) => {
     ];
 
     try {
-        const response = await axios.post('http://localhost:5000/predict', {
+        const response = await axios.post('https://diabetes-predictor-api-1.onrender.com/predict', {
             features: input
         });
 
