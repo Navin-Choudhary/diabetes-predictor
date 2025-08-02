@@ -26,7 +26,7 @@ app.post('/predict', async (req, res) => {
     ];
 
     try {
-        const response = await axios.post('https://diabetes-predictor-api-1.onrender.com/predict', {
+        const response = await axios.post('https://diabetes-predictor-api-production.up.railway.app/predict', {
             features: input
         });
 
@@ -41,3 +41,4 @@ app.post('/predict', async (req, res) => {
 app.listen(3000, () => {
     console.log('Server started on http://localhost:3000');
 });
+
